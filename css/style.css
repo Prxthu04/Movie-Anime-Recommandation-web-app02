@@ -1,0 +1,122 @@
+/* ========== BASE STYLING ========== */
+body {
+    background-color: #141414;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    color: #ffffff;
+    margin-bottom: 0.4rem;
+}
+
+section.main > div {
+    padding-top: 0.8rem;
+}
+
+/* ========== SIDEBAR ========== */
+.sidebar-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #e50914;
+    margin-bottom: 0.4rem;
+}
+
+/* ========== CARDS ========== */
+.card {
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    padding: 0.5rem;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    height: 110px;
+    font-size: 0.75rem;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    background-color: #2a2a2a;
+}
+
+.card strong {
+    font-size: 0.8rem;
+    color: #e50914;
+}
+
+/* Card Variants */
+.search-results {
+    height: 100px;
+}
+
+.genre-card {
+    height: 120px;
+    font-size: 0.75rem;
+}
+
+/* ========== FILTER LABELS ========== */
+.filter-label {
+    font-weight: 600;
+    color: #e50914;
+    font-size: 0.85rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.2rem;
+}
+
+/* ========== RADIO BUTTONS ========== */
+.stRadio > div {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.stRadio label {
+    background-color: #1f1f1f;
+    padding: 0.3rem 0.7rem;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    font-size: 0.72rem;
+    border: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.stRadio input:checked + label {
+    background-color: #e50914;
+    border-color: #e50914;
+    color: white;
+}
+
+/* ========== BUTTONS ========== */
+button {
+    background-color: #e50914 !important;
+    color: white !important;
+    padding: 0.3rem 0.8rem !important;
+    border: none !important;
+    border-radius: 5px !important;
+    font-size: 0.75rem !important;
+    font-weight: bold !important;
+    margin-top: 0.3rem;
+}
+
+button:hover {
+    background-color: #b20710 !important;
+}
+
+/* ========== COLUMN WIDTH ========== */
+[data-testid="column"] {
+    min-width: 140px !important;
+    max-width: 160px !important;
+}
+
+/* ========== SCROLLBAR ========== */
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-scrollbar-thumb {
+    background: #e50914;
+    border-radius: 8px;
+}
